@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- VERIFICACIÓN DE GOOGLE: pega aquí la etiqueta que te da Search Console (paso 4 de las instrucciones) -->
+<title>Omnisink · Mensajería privada para la familia</title>
+<meta name="description" content="Omnisink es una app de mensajería privada con cifrado de extremo a extremo, pensada para familias y grupos de confianza.">
+<style>
+  :root { --azul:#2F5F8F; --azul2:#3B6EA5; --fondo:#F5F8FB; --texto:#16212C; --gris:#5A6B7B; --tarjeta:#FFFFFF; --borde:#DCE4EC; }
+  @media (prefers-color-scheme: dark) { :root { --fondo:#10151C; --texto:#E8EEF4; --gris:#A8B6C4; --tarjeta:#18212B; --borde:#26323F; } }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--fondo); color:var(--texto); line-height:1.6; }
+  header { background:linear-gradient(135deg,var(--azul),var(--azul2)); color:#fff; padding:56px 20px 64px; text-align:center; }
+  header h1 { margin:14px 0 6px; font-size:2.4rem; letter-spacing:.5px; }
+  header p { margin:0 auto; max-width:620px; font-size:1.15rem; opacity:.95; }
+  main { max-width:960px; margin:-36px auto 0; padding:0 16px 48px; }
+  .rejilla { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+  .tarjeta { background:var(--tarjeta); border:1px solid var(--borde); border-radius:18px; padding:22px; }
+  .tarjeta h3 { margin:6px 0 6px; font-size:1.1rem; }
+  .tarjeta p { margin:0; color:var(--gris); }
+  .icono { font-size:1.8rem; }
+  section { margin-top:36px; }
+  h2 { font-size:1.5rem; margin:0 0 12px; }
+  footer { text-align:center; color:var(--gris); padding:28px 16px 40px; font-size:.95rem; }
+  footer a, main a { color:var(--azul2); }
+</style>
+</head>
+<body>
+<header>
+  <svg width="84" height="84" viewBox="0 0 100 100" aria-label="Logo de Omnisink">
+    <circle cx="50" cy="50" r="46" fill="rgba(255,255,255,.12)"/>
+    <g stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none">
+      <line x1="16" y1="24" x2="50" y2="56"/><line x1="84" y1="24" x2="50" y2="56"/>
+      <line x1="16" y1="76" x2="50" y2="56"/><line x1="84" y1="76" x2="50" y2="56"/>
+    </g>
+    <circle cx="50" cy="56" r="8" fill="#fff"/>
+  </svg>
+  <h1>Omnisink</h1>
+  <p>Mensajería privada para la familia y los grupos de confianza. Lo que conversas queda entre ustedes.</p>
+</header>
+
+<main>
+  <div class="rejilla">
+    <div class="tarjeta"><div class="icono">🔒</div><h3>Cifrado de extremo a extremo</h3>
+      <p>Los mensajes, fotos, notas de voz, documentos y llamadas se cifran en tu teléfono. Ni Omnisink ni nadie en el camino puede leerlos.</p></div>
+    <div class="tarjeta"><div class="icono">👨‍👩‍👧</div><h3>Solo por invitación</h3>
+      <p>Para entrar necesitas el código de un familiar. Nadie te encuentra si no le das tu alias y no se usa tu agenda de contactos.</p></div>
+    <div class="tarjeta"><div class="icono">📹</div><h3>Llamadas y videollamadas</h3>
+      <p>De voz o con video, de a dos o en grupo, cifradas igual que los mensajes.</p></div>
+    <div class="tarjeta"><div class="icono">💾</div><h3>Respaldo que solo tú abres</h3>
+      <p>Tu historial se respalda cifrado con tu frase de 12 palabras, en tu propio Google Drive si lo eliges. Si olvidas la frase, tu familia de confianza puede ayudarte a recuperarlo.</p></div>
+  </div>
+
+  <section class="tarjeta">
+    <h2>¿Cómo la consigo?</h2>
+    <p>Omnisink está en una etapa de prueba con familias invitadas y se instala desde un enlace directo (todavía no está en Google Play). Si alguien de tu familia ya la usa, pídele una invitación.</p>
+  </section>
+
+  <section class="tarjeta">
+    <h2>Privacidad sin letra pequeña</h2>
+    <p>No hay publicidad, no vendemos datos y no leemos tus conversaciones (no podemos: están cifradas). Lee los detalles en la
+      <a href="privacidad.html">Política de privacidad</a> y en las <a href="condiciones.html">Condiciones de uso</a>.</p>
+  </section>
+</main>
+
+<footer>
+  © 2026 Omnisink · Hecho en Ecuador 🇪🇨 ·
+  <a href="privacidad.html">Privacidad</a> · <a href="condiciones.html">Condiciones</a>
+</footer>
+</body>
+</html>
