@@ -1,0 +1,17 @@
+{
+  "name": "Omnisink",
+  "short_name": "Omnisink",
+  "description": "Mensajería privada y cifrada para la familia.",
+  "lang": "es-EC",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F4F7FB",
+  "theme_color": "#FFFFFF",
+  "icons": [
+    { "src": "icono-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icono-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icono-mascara-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
