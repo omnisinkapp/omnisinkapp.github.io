@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayuda · Omnisink</title>
+<meta name="description" content="Guía de uso de Omnisink: instalar, invitar, verificar, llamar, respaldar y cuidar tu cuenta.">
+<style>
+  :root { --azul:#2F5F8F; --azul2:#3B6EA5; --fondo:#F5F8FB; --texto:#16212C; --gris:#5A6B7B; --tarjeta:#FFFFFF; --borde:#DCE4EC; }
+  @media (prefers-color-scheme: dark) { :root { --fondo:#10151C; --texto:#E8EEF4; --gris:#A8B6C4; --tarjeta:#18212B; --borde:#26323F; --azul2:#7FB0E6; } }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--fondo); color:var(--texto); line-height:1.6; }
+  header { background:linear-gradient(135deg,var(--azul),#3B6EA5); color:#fff; padding:36px 20px 52px; text-align:center; }
+  header h1 { margin:6px 0 4px; font-size:1.9rem; }
+  header p { margin:0 auto; max-width:560px; opacity:.95; }
+  main { max-width:760px; margin:-30px auto 0; padding:0 16px 48px; display:flex; flex-direction:column; gap:12px; }
+  nav.tarjeta a { display:inline-block; margin:2px 10px 2px 0; }
+  .tarjeta { background:var(--tarjeta); border:1px solid var(--borde); border-radius:18px; padding:18px 20px; }
+  h2 { font-size:1.2rem; margin:0 0 6px; }
+  details { border-top:1px solid var(--borde); padding:10px 0; }
+  details:first-of-type { border-top:0; }
+  summary { cursor:pointer; font-weight:650; }
+  summary:focus-visible, a:focus-visible { outline:3px solid var(--azul2); outline-offset:2px; border-radius:6px; }
+  ol, ul { margin:8px 0 4px; padding-left:22px; }
+  li { margin:4px 0; }
+  .gris { color:var(--gris); }
+  b.ruta { white-space:nowrap; }
+  footer { text-align:center; color:var(--gris); padding:24px 16px 40px; font-size:.95rem; }
+  a { color:var(--azul2); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Ayuda de Omnisink</h1>
+  <p>Todo lo que puedes hacer en la app, paso a paso.</p>
+</header>
+<main>
+  <nav class="tarjeta" aria-label="Temas">
+    <a href="#empezar">Empezar</a><a href="#chats">Chats y grupos</a><a href="#llamadas">Llamadas</a><a href="#seguridad">Seguridad</a>
+    <a href="#respaldo">Respaldo</a><a href="#familia">Ayuda a la familia</a><a href="#mejoras">Mejoras</a><a href="#cuenta">Tu cuenta</a><a href="#problemas">Problemas</a>
+  </nav>
+
+  <section class="tarjeta" id="empezar">
+    <h2>🚀 Empezar</h2>
+    <details><summary>Instalar Omnisink</summary>
+      <p>En Android descárgala desde <a href="descargar.html">la página de descarga</a> (se instala sin Google Play). En iPhone o computadora úsala desde el navegador en <a href="app/">Omnisink Web</a>; en iPhone agrégala a la pantalla de inicio con Safari → Compartir → <b>Agregar a inicio</b> para recibir avisos.</p></details>
+    <details><summary>Crear tu cuenta</summary>
+      <ol><li>Abre Omnisink y toca <b>Tengo un código de invitación</b> (si el registro está abierto, el botón dice <b>Crear mi cuenta</b>).</li>
+        <li>Escribe el código de invitación que te dio un familiar (si el registro está abierto, el código es opcional).</li>
+        <li>Escribe tu nombre y elige <b>Sin datos personales</b> o <b>Con email</b>. Con email puedes volver a entrar desde otro teléfono; sin datos personales, si desinstalas la app sin agregar un email, pierdes la cuenta.</li>
+        <li>Marca la casilla de las Condiciones de uso y la Política de privacidad y toca <b>Crear mi cuenta</b>.</li></ol></details>
+    <details><summary>Invitar a alguien</summary>
+      <p>En <b class="ruta">Ajustes → Invitar a alguien</b> se crea un código que vence en 7 días y se comparte con el enlace de descarga. Si tienes un grupo familiar, la invitación familiar mete a la persona directo al grupo y la deja como contacto de todos.</p></details>
+    <details><summary>Agregar un contacto por su alias</summary>
+      <p>Cada persona tiene un alias en <b>Ajustes</b>. Compártelo y la otra persona te agrega desde <b>Nuevo chat</b>. Omnisink no usa la agenda de tu teléfono.</p></details>
+  </section>
+
+  <section class="tarjeta" id="chats">
+    <h2>💬 Chats y grupos</h2>
+    <details><summary>Fotos, notas de voz y documentos</summary>
+      <p>En el chat toca <b>+</b> para adjuntar una foto o un documento, o toca el micrófono para grabar una nota de voz y luego envíala. Todo va cifrado. En el servidor los archivos se borran cuando todos los descargaron o a las 72 horas, lo que pase primero: descárgalos dentro de ese tiempo.</p></details>
+    <details><summary>Mensajes temporales</summary>
+      <p>En la información del chat elige cuánto duran los mensajes nuevos. Se borran solos de todos los teléfonos y del servidor. Ojo: alguien igual podría tomarles captura de pantalla.</p></details>
+    <details><summary>Grupos y grupo familiar</summary>
+      <p>Desde <b>Nuevo chat → Crear un grupo</b>. Si conviertes un grupo en <b>familiar</b>, todos quedan como contactos entre sí (no se puede deshacer). Si el dueño sale del grupo o elimina su cuenta, el grupo pasa a quien lleva más tiempo en él.</p></details>
+    <details><summary>Borrar, bloquear y salir</summary>
+      <p>Mantén presionado un mensaje para borrarlo. Para quitar o bloquear a alguien, en <b>Nuevo chat</b> mantén presionado su nombre. Para salir de un grupo, abre la información del grupo.</p></details>
+  </section>
+
+  <section class="tarjeta" id="llamadas">
+    <h2>📞 Llamadas y videollamadas</h2>
+    <p>En el chat toca el teléfono (voz) o la cámara (video); también funcionan en grupo. Van cifradas igual que los mensajes. Si la conexión se corta un momento, la llamada intenta reconectarse sola por unos 25 segundos. La pestaña <b>Llamadas</b> guarda el historial en tu teléfono.</p>
+    <p class="gris">En iPhone y computadora las llamadas funcionan con la página abierta.</p>
+  </section>
+
+  <section class="tarjeta" id="seguridad">
+    <h2>🔒 Seguridad</h2>
+    <details><summary>Verificar a un familiar (muy recomendado)</summary>
+      <p>En la información del chat toca <b>Verificar</b>. Lo mejor es en persona: cada uno escanea el código QR del otro. También pueden leer en voz alta los 12 grupos de números por llamada: deben ser iguales. Si un día aparece "la identidad cambió", normalmente es porque reinstaló la app: verifiquen de nuevo.</p></details>
+    <details><summary>PIN y huella</summary>
+      <p>En <b class="ruta">Ajustes → Seguridad</b> pon un PIN y, si quieres, la huella para abrir Omnisink. Si olvidas el PIN tienes que cerrar sesión.</p></details>
+    <details><summary>Usar dos teléfonos o la computadora</summary>
+      <p>En el teléfono nuevo o en la web elige vincular; aparece un QR. En tu teléfono principal abre la pestaña <b>Dispositivos → Escanear código</b>. Hasta 4 dispositivos por cuenta.</p></details>
+    <details><summary>Verificar tu número</summary>
+      <p>Opcional, en <b class="ruta">Ajustes → Verificar mi número</b>: envías un SMS con un código desde tu número (tu operadora lo cobra como un SMS normal). Nadie ve tu número; tus contactos solo ven que está verificado.</p></details>
+  </section>
+
+  <section class="tarjeta" id="respaldo">
+    <h2>💾 Respaldo</h2>
+    <details><summary>Activar el respaldo con tu frase de 12 palabras</summary>
+      <ol><li>Ve a <b class="ruta">Ajustes → Respaldo</b> y toca <b>Crear mi frase de 12 palabras</b>.</li>
+        <li>Anota las 12 palabras en papel, en orden. No les tomes captura ni las envíes por chat.</li>
+        <li>Confírmalas. Desde ahí se respalda solo una vez al día (sin fotos, solo su vista previa).</li></ol>
+      <p>Puedes guardarlo en tu propio Google Drive o en el servidor de Omnisink; en los dos casos va cifrado y nadie lo abre sin tu frase. Si tu cuenta es sin datos personales, agrégale un email ahí mismo para poder restaurarla en otro teléfono.</p></details>
+    <details><summary>Custodios: si olvidas tu frase</summary>
+      <p>En <b class="ruta">Respaldo → Custodios</b> eliges de 3 a 5 familiares de mucha confianza. Cada uno guarda un pedacito de tu clave; varios juntos, verificándote en persona, te ayudan a recuperarla. Ninguno puede leer tus chats.</p></details>
+    <details><summary>Perdí el teléfono y no tenía respaldo</summary>
+      <p>Entra con tu email en el teléfono nuevo y pide el historial a tu familia: ellos te verifican en persona y te comparten los mensajes de los chats que tienen en común. Las fotos antiguas no se recuperan.</p></details>
+  </section>
+
+  <section class="tarjeta" id="familia">
+    <h2>🤝 Ayuda remota a un familiar</h2>
+    <p>Desde la información del chat puedes ver la pantalla de un familiar para guiarle, o tocarla si te lo permite. Solo funciona si se verificaron en persona con el QR. La persona acepta cada vez, ve un borde rojo y el botón ✋ CORTAR, y la sesión se corta sola a los 30 minutos. Nunca se pueden tocar contraseñas ni instalar apps. Para que pueda tocar, Android pide activar un permiso de accesibilidad la primera vez (la app muestra los pasos). Desde la web puedes ayudar, pero solo el teléfono Android comparte su pantalla.</p>
+  </section>
+
+  <section class="tarjeta" id="mejoras">
+    <h2>💡 Mejoras</h2>
+    <p>En la pestaña <b>Mejoras</b> propones ideas para la app. "Refinar con IA" ordena tu idea (máximo 5 al día; la etiqueta indica que la generó la IA). La familia vota y con 20 votos pasa a revisión. Las ideas las ven todos los usuarios y no van cifradas: no pongas datos personales.</p>
+  </section>
+
+  <section class="tarjeta" id="cuenta">
+    <h2>👤 Tu cuenta y tus datos</h2>
+    <details><summary>Descargar mis datos</summary>
+      <p><b class="ruta">Ajustes → Mis datos → Descargar mis datos</b> te entrega un archivo con lo que el servidor guarda de tu cuenta. Tus mensajes no están ahí: viven cifrados en tus teléfonos.</p></details>
+    <details><summary>Eliminar mi cuenta</summary>
+      <p><b class="ruta">Ajustes → Mis datos → Eliminar mi cuenta</b>, escribe ELIMINAR y confirma. Se borran tu perfil, contactos, número verificado, Mejoras y respaldo del servidor, y lo guardado en ese dispositivo. No se puede deshacer. Si guardaste el respaldo en tu Google Drive, bórralo en Drive → Configuración → Administrar apps → Omnisink.</p></details>
+    <details><summary>Avisos sin Google</summary>
+      <p>Si tu teléfono no tiene Google Play, en <b>Ajustes</b> activa los avisos con la app gratuita ntfy.</p></details>
+    <details><summary>Actualizar la app</summary>
+      <p>Omnisink te avisa cuando hay versión nueva; también puedes ir a <b class="ruta">Ajustes → Buscar actualizaciones</b>. Se descarga (unos 170 MB) y Android pide confirmar. Tus chats se conservan.</p></details>
+  </section>
+
+  <section class="tarjeta" id="problemas">
+    <h2>🛠️ Si algo no funciona</h2>
+    <ul>
+      <li><b>No llegan avisos:</b> revisa que Omnisink tenga permiso de notificaciones y que el ahorro de batería no la cierre (Ajustes del teléfono → Aplicaciones → Omnisink → Batería → Sin restricciones).</li>
+      <li><b>Un mensaje queda "en espera":</b> la otra persona debe abrir la app o cambió de identidad; verifíquense de nuevo.</li>
+      <li><b>La llamada no conecta:</b> prueben con WiFi y datos; si sigue y en <b>Ajustes</b> aparece <b>Registro de fallos</b>, tócalo y compártelo con el administrador.</li>
+      <li><b>Otra duda:</b> escribe a <a href="mailto:omnisink.app@gmail.com">omnisink.app@gmail.com</a>.</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <a href="./">Inicio</a> · <a href="descargar.html">Descargar</a> · <a href="privacidad.html">Privacidad</a> · <a href="condiciones.html">Condiciones</a>
+</footer>
+</body>
+</html>
